@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Tableau de bord - NatEtNém</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🌟 Bienvenue Nathan & Némo 🌟</h1>
+
+  <nav>
+    <button onclick="showSection('todo')">📝 To-Do</button>
+    <button onclick="showSection('journal')">📔 Journal</button>
+    <button onclick="showSection('gaming')">🎮 Minecraft</button>
+    <button onclick="showSection('orga')">💡 Organisation</button>
+  </nav>
+
+  <section id="todo" class="content">
+    <h2>Ma To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="Nouvelle tâche">
+    <button onclick="addTask()">Ajouter</button>
+    <ul id="taskList"></ul>
+  </section>
+
+  <section id="journal" class="content" style="display:none;">
+    <h2>📔 Journal de bord</h2>
+    <p>Ici tu pourras écrire tes idées et projets futurs.</p>
+  </section>
+
+  <section id="gaming" class="content" style="display:none;">
+    <h2>🎮 Objectif Minecraft</h2>
+    <p>Miner 500k minerais – <em>Mods utilisés, captures d’écran, etc.</em></p>
+  </section>
+
+  <section id="orga" class="content" style="display:none;">
+    <h2>💡 Checklist TDAH</h2>
+    <ul>
+      <li><input type="checkbox"> Préparer mon sac 🎒</li>
+      <li><input type="checkbox"> Charger l’iPad 🔋</li>
+      <li><input type="checkbox"> Noter mes devoirs 📓</li>
+    </ul>
+  </section>
+
+  <script src="todo.js"></script>
+</body>
+</html>
