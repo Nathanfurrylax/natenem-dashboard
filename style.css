@@ -1,0 +1,12 @@
+body {
+  font-family: sans-serif;
+  background: #f7f0ff;
+  padding: 20px;
+}
+nav button {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.content {
+  margin-top: 20px;
+}
